@@ -1,34 +1,35 @@
-@font-face{
+/*@font-face{
   font-family: charter;
   src: url('./fonts/fonts/charter-regular.otf');
   font-style:normal;
   font-weight:400;
 }
 @font-face{
-  font-family: charter1;
+  font-family: charter;
   src: url('./fonts/fonts/charter-italic.otf');
   font-style:italic;
   font-weight:400;
 }
 @font-face{
-  font-family: charter2;
+  font-family: charter;
   src: url('./fonts/fonts/charter-bold.otf');
   font-style:normal;
   font-weight:bold;
 }
 @font-face{
-  font-family: charter3;
+  font-family: charter;
   src: url('./fonts/fonts/charter-bold-italic.otf');
   font-style:italic;
   font-weight:bold;
 }
+*/
 :root{
   font-size: 18px;
 }
 
 body{
   color: #212121;
-  font-family: charter;
+  font-family: 'Roboto', sans-serif;
   /*font-size: 60px; */
   /*font-size: 15px;*/
   background-color:#F6F6F6;
@@ -63,3 +64,47 @@ h2{
 h3{
   font-size: 1.5em;
 }
+pre{
+background: #FEC62E;
+width: 901.05px;
+height: 270px;
+
+
+
+}
+.hero{
+  background-image: linear-gradient(to top,rgba(255,255,255,.3), transparent), url('./images/patron-1.png');
+  /*background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+*/
+  height: 350px;
+
+}
+
+.img_dom{
+  width: 900px;
+  height: 470px;
+}
+.section-content {
+  counter-reset: titleList;
+}
+.section-content h3{
+  counter-increment: titleList;
+}
+.section-content h3::before{
+  content: counter(titleList,decimal);
+}
+
+.section-content h3::after{
+  content: '';
+  width: 32px;
+  height: 4px;
+  background:#424242;
+  display: inline-block;
+}
+
+/*::selection{
+  background:#99A799;
+}
+*/
