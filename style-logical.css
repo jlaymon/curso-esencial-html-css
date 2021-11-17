@@ -33,8 +33,6 @@ body{
   /*font-size: 60px; */
   /*font-size: 15px;*/
   background-color:#F6F6F6;
-  margin: 0;
-
 }
 a{
   color: #191A19;
@@ -59,36 +57,20 @@ nav details summary{
 
 h1{
    font-size: 60px;
-   margin-top: 64px;
-   margin-bottom: 16px;
-  /* margin: 64px 10px 16px 10px;*/
 }
-h1 ~ p{
-  margin-bottom: 64px;
-}
-
-hr{
-  margin: 64px 0px;
-}
-
 h2{
   font-size: 2em;
-  margin: 40px 0px;
-  font-weight: normal;
 }
 h3{
   font-size: 1.5em;
-  margin-top: 16px;
-  margin-bottom: 24px;
-  font-weight: normal;
 }
 pre{
 background: #FEC62E;
 width: 901.05px;
 height: 270px;
-}
-blockquote{
-  margin: 32px 0px;
+
+
+
 }
 .hero{
   background-image: linear-gradient(to top,rgba(255,255,255,.3), transparent), url('./images/patron-1.png');
@@ -104,25 +86,8 @@ blockquote{
   width: 900px;
   height: 470px;
 }
-.section-content + hr{
-  display: none;
-}
-.section-content ol li{
-  line-height: 24px;
-}
-.section-content ul li{
-margin-bottom: 16px;
-}
 .section-content {
   counter-reset: titleList;
-  margin-top: 164px;
-
-}
-.section-content:first-of-type{
-  margin: 0px;
-}
-.section-content img{
-  margin-top: 40px;
 }
 .section-content h3{
   counter-increment: titleList;
