@@ -62,6 +62,7 @@ h1{
    margin-top: 64px;
    margin-bottom: 16px;
   /* margin: 64px 10px 16px 10px;*/
+  /*border: 1px solid red;*/
 }
 h1 ~ p{
   margin-bottom: 64px;
@@ -81,15 +82,38 @@ h3{
   margin-top: 16px;
   margin-bottom: 24px;
   font-weight: normal;
+  width: 200px;
+  padding: 20px;
+  border: 1px solid red;
+  box-sizing:border-box;
 }
 pre{
-background: #FEC62E;
-width: 901.05px;
-height: 270px;
+  background: #FEC62E;
+  padding: 40px;
+  font-family: 'Roboto';
+  line-height: 24px;
+
+
 }
+
 blockquote{
+  font-size: 24px;
   margin: 32px 0px;
+  padding-left: 16px;
+  /*border: 1px solid red;*/
+  border-left: 4px solid #424242;
+  line-height: 24px;
 }
+
+blockquote span{
+  color: #99A799;
+}
+
+blockquote span::before{
+  content: '-';
+}
+
+
 .hero{
   background-image: linear-gradient(to top,rgba(255,255,255,.3), transparent), url('./images/patron-1.png');
   /*background-repeat: no-repeat;
@@ -126,9 +150,10 @@ margin-bottom: 16px;
 }
 .section-content h3{
   counter-increment: titleList;
+  padding-bottom: 4px;
 }
 .section-content h3::before{
-  content: counter(titleList,decimal);
+  content: counter(titleList,decimal)'.';
 }
 
 .section-content h3::after{
