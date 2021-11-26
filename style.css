@@ -40,9 +40,20 @@ a{
   color: #191A19;
 }
 header{
-  background-color: #F6F6F6;
+
   font-size: 14px;
   color: #99A799;
+  /*position: absolute;*/
+  /*position: fixed;*/
+  /*position: sticky;*/
+  border: 1px solid red;
+  /*top: 50px;*/
+  /*bottom: 100px;*/
+  background: red;
+  /*left: 0;*/
+  /*z-index: 1;*/
+  /*top: 0;*/
+
 
 }
 header a {
@@ -82,9 +93,8 @@ h3{
   margin-top: 16px;
   margin-bottom: 24px;
   font-weight: normal;
-  width: 200px;
-  padding: 20px;
-  border: 1px solid red;
+
+
   box-sizing:border-box;
 }
 pre{
@@ -112,7 +122,19 @@ blockquote span{
 blockquote span::before{
   content: '-';
 }
+.main{
 
+}
+.wrapper{
+  width: 902px;
+  margin: auto;
+
+
+}
+.main-content{
+
+  padding: 20px;
+}
 
 .hero{
   background-image: linear-gradient(to top,rgba(255,255,255,.3), transparent), url('./images/patron-1.png');
@@ -139,7 +161,8 @@ margin-bottom: 16px;
 }
 .section-content {
   counter-reset: titleList;
-  margin-top: 164px;
+
+
 
 }
 .section-content:first-of-type{
@@ -162,6 +185,10 @@ margin-bottom: 16px;
   height: 4px;
   background:#424242;
   display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
 }
 
 /*::selection{
