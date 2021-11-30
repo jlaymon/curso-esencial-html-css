@@ -26,6 +26,9 @@
 :root{
   font-size: 18px;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 body{
   color: #212121;
@@ -43,22 +46,28 @@ header{
 
   font-size: 14px;
   color: #99A799;
+  width: 188px;
   /*position: absolute;*/
   /*position: fixed;*/
-  /*position: sticky;*/
-  border: 1px solid red;
-  /*top: 50px;*/
+  position: absolute;
+
+  top: 64px;
+  left: -232px;
   /*bottom: 100px;*/
-  background: red;
-  /*left: 0;*/
-  /*z-index: 1;*/
+
+  z-index: 1;
   /*top: 0;*/
 
-
 }
+
+
 header a {
   color: #99A799;
   text-decoration: none;
+}
+header li{
+  margin-bottom: 16px;
+
 }
 header a:hover{
   font-weight: bold
@@ -66,12 +75,14 @@ header a:hover{
 
 nav details summary{
   font-weight: bold;
+  line-height: 24px;
 }
 
 h1{
    font-size: 60px;
    margin-top: 64px;
    margin-bottom: 16px;
+   font-weight: normal;
   /* margin: 64px 10px 16px 10px;*/
   /*border: 1px solid red;*/
 }
@@ -122,6 +133,13 @@ blockquote span{
 blockquote span::before{
   content: '-';
 }
+.header{
+  position: sticky;
+  top: 0;
+}
+.header-content{
+  position: relative;
+}
 .main{
 
 }
@@ -133,7 +151,7 @@ blockquote span::before{
 }
 .main-content{
 
-  padding: 20px;
+  background: #F9F9F9;
 }
 
 .hero{
@@ -173,7 +191,8 @@ margin-bottom: 16px;
 }
 .section-content h3{
   counter-increment: titleList;
-  padding-bottom: 4px;
+  padding-bottom: 8px;
+  position: relative;
 }
 .section-content h3::before{
   content: counter(titleList,decimal)'.';
@@ -181,7 +200,7 @@ margin-bottom: 16px;
 
 .section-content h3::after{
   content: '';
-  width: 32px;
+  width: 80px;
   height: 4px;
   background:#424242;
   display: inline-block;
