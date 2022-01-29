@@ -29,6 +29,9 @@
   --white20: #a5a3a4;
   --white10: #3a3539;
 }
+html{
+scroll-behavior: smooth;
+}
 
 body{
   color: var(--white30)
